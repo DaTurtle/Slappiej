@@ -9,8 +9,61 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="module6.slappiej.MainScreen">
 
-    <TextView
+    <Button
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:text="@string/email"
+        android:id="@+id/buttonToEmail"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:clickable="true"
+        android:onClick="gotoEmail" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/buttonToEmail"
+        android:layout_alignBottom="@+id/buttonToEmail"
+        android:layout_alignTop="@+id/buttonToEmail" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button3"
+        android:layout_alignEnd="@+id/buttonToEmail"
+        android:layout_below="@+id/buttonToEmail"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button4"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/button3"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button6"
+        android:layout_alignBottom="@+id/button5"
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
 </RelativeLayout>
