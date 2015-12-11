@@ -7,62 +7,92 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="module6.slappiej.MainScreen">
+    tools:context=".Email"
+    android:orientation="horizontal"
+    >
 
-    <Button
-        android:id="@+id/buttonToEmail"
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_weight="0.5"
-        android:onClick="gotoEmail"
-        />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button2"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@id/buttonToEmail"
-        />
+        <Button
+            android:id="@+id/buttonToEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/email"
+            android:layout_weight="1"
+            android:onClick="gotoEmail"
+            />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button3"
-        android:layout_alignParentLeft="true"
-        android:layout_toBottomOf="@id/buttonToEmail"
-        />
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/video"
+            android:layout_weight="1"
+            android:onClick="gotoEmail"
+            />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button4"
-        android:layout_toRightOf="@id/button3"
-        android:layout_toBottomOf="@id/button2"
-        />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button3"
-        android:layout_alignParentLeft="true"
-        android:layout_toBottomOf="@id/button3"
-        />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="button6"
-        android:layout_toRightOf="@id/button5"
-        android:layout_toBottomOf="@id/button4"
-        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/transport"
+            android:layout_weight="1"
+            android:onClick="gotoEmail"
+            />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/news"
+            android:layout_weight="1"
+            android:onClick="gotoEmail"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/chat"
+            android:layout_weight="1"
+            android:onClick="gotoEmail"
+            />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/music"
+            android:layout_weight="1"
+            android:onClick="gotoEmail"
+            />
+
+    </LinearLayout>
+
 
 </LinearLayout>
