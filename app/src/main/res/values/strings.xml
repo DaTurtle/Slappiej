@@ -6,4 +6,9 @@
     <string name="video">Beeldberichten</string>
     <string name="news">Nieuws</string>
     <string name="music">Muziek</string>
+    <string name="email.inbox">Gekregen E-mails Bekijken</string>
+    <string name="email.new">Nieuwe E-mail schrijven</string>
+    <string name="email.bin">Verwijderde E-mails bekijken</string>
+    <string name="email.sent">Verzonden E-mails bekijken</string>
+
 </resources>

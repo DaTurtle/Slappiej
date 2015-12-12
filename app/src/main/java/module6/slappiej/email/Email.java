@@ -1,7 +1,9 @@
-package module6.slappiej;
+package module6.slappiej.email;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import module6.slappiej.R;
 
 public class Email extends Activity {
 

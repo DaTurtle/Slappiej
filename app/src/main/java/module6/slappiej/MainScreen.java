@@ -1,11 +1,11 @@
 package module6.slappiej;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+
+import module6.slappiej.email.Email;
 
 public class MainScreen extends AppCompatActivity {
 
