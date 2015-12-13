@@ -26,7 +26,12 @@
         <activity
             android:name=".email.ReadMail"
             android:screenOrientation="landscape"></activity>
-        <activity android:name=".email.WriteMail"></activity>
+        <activity
+            android:name=".email.WriteMail"
+            android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".contacts.ContactSelector"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>
