@@ -37,7 +37,7 @@ android:orientation="horizontal"
         android:drawableLeft="@android:drawable/ic_delete"
         android:text="@string/email.bin"
         android:layout_weight="1"
-        android:onClick="gotoEmail"
+        android:onClick="gotoBin"
         />
 
 </LinearLayout>
@@ -58,7 +58,7 @@ android:orientation="horizontal"
         android:drawableLeft="@android:drawable/ic_delete"
         android:text="@string/email.new"
         android:layout_weight="1"
-        android:onClick="gotoEmail"
+        android:onClick="gotoWriteMail"
         />
 
     <Button
@@ -69,7 +69,7 @@ android:orientation="horizontal"
         android:drawableLeft="@android:drawable/ic_delete"
         android:text="@string/email.sent"
         android:layout_weight="1"
-        android:onClick="gotoEmail"
+        android:onClick="gotoSent"
         />
 
 </LinearLayout>

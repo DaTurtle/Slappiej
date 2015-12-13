@@ -23,4 +23,19 @@ public class EmailMain extends Activity {
         Intent intent = new Intent(this, Inbox.class);
         startActivity(intent);
     }
+
+    public void gotoWriteMail(View view) {
+        Intent intent = new Intent(this, WriteMail.class);
+        startActivity(intent);
+    }
+
+    public void gotoSent(View view) {
+        Intent intent = new Intent(this, WriteMail.class);
+        startActivity(intent);
+    }
+
+    public void gotoBin(View view) {
+        Intent intent = new Intent(this, WriteMail.class);
+        startActivity(intent);
+    }
 }

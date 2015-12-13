@@ -37,7 +37,7 @@
             android:drawableLeft="@android:drawable/ic_menu_call"
             android:text="@string/video"
             android:layout_weight="1"
-            android:onClick="gotoEmail"
+            android:onClick="gotoVideo"
             />
 
     </LinearLayout>
@@ -58,7 +58,7 @@
             android:drawableLeft="@android:drawable/ic_menu_directions"
             android:text="@string/transport"
             android:layout_weight="1"
-            android:onClick="gotoEmail"
+            android:onClick="gotoTransport"
             />
 
         <Button
@@ -69,7 +69,7 @@
             android:drawableLeft="@android:drawable/ic_delete"
             android:text="@string/news"
             android:layout_weight="1"
-            android:onClick="gotoEmail"
+            android:onClick="gotoNews"
             />
 
     </LinearLayout>
@@ -90,7 +90,7 @@
             android:drawableLeft="@android:drawable/ic_delete"
             android:text="@string/chat"
             android:layout_weight="1"
-            android:onClick="gotoEmail"
+            android:onClick="gotoChat"
             />
 
         <Button
@@ -101,7 +101,7 @@
             android:drawableLeft="@android:drawable/ic_media_play"
             android:text="@string/music"
             android:layout_weight="1"
-            android:onClick="gotoEmail"
+            android:onClick="gotoMusic"
             />
 
     </LinearLayout>

@@ -10,36 +10,23 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainScreen"
-            android:screenOrientation="landscape"
-
-            >
-
+            android:screenOrientation="landscape">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".email.EmailMain"
-            android:screenOrientation="landscape"
-
-            >
-
-        </activity>
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".email.Inbox"
-            android:screenOrientation="landscape"
-
-            >
-
-        </activity>
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".email.ReadMail"
-            android:screenOrientation="landscape"
-
-            >
-
-        </activity>
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".email.WriteMail"></activity>
     </application>
 
 </manifest>

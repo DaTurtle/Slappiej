@@ -19,4 +19,29 @@ public class MainScreen extends AppCompatActivity {
         Intent intent = new Intent(this, EmailMain.class);
         startActivity(intent);
     }
+
+    public void gotoTransport(View view) {
+        Intent intent = new Intent(this, EmailMain.class);
+        startActivity(intent);
+    }
+
+    public void gotoChat(View view) {
+        Intent intent = new Intent(this, EmailMain.class);
+        startActivity(intent);
+    }
+
+    public void gotoVideo(View view) {
+        Intent intent = new Intent(this, EmailMain.class);
+        startActivity(intent);
+    }
+
+    public void gotoNews(View view) {
+        Intent intent = new Intent(this, EmailMain.class);
+        startActivity(intent);
+    }
+
+    public void gotoMusic(View view) {
+        Intent intent = new Intent(this, EmailMain.class);
+        startActivity(intent);
+    }
 }
