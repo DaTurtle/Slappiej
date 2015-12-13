@@ -11,8 +11,7 @@
     <string name="email.new">Nieuwe E-mail schrijven</string>
     <string name="email.bin">Verwijderde E-mails bekijken</string>
     <string name="email.sent">Verzonden E-mails bekijken</string>
-    <string name="email.sender">Afzender</string>
-    <string name="email.subject">Onderwerp</string>
+    <string name="email.title">Afzender: Onderwerp</string>
 
 
 

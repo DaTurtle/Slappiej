@@ -16,7 +16,6 @@
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="40sp"
             android:paddingBottom="20dp"
-            android:text="Large Text"
             android:id="@+id/TitleText" />
 
         <TextView
@@ -24,7 +23,6 @@
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="30sp"
-            android:text="Large Text"
             android:id="@+id/BodyText" />
     </LinearLayout>
 </LinearLayout>

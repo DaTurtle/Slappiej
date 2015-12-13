@@ -1,9 +1,12 @@
 package module6.slappiej.email;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 /**
  * Created by Jan-Willem on 13-12-2015.
  */
-public class EmailObject {
+public class EmailObject implements Parcelable{
     private String sender;
     private String subject;
     private String body;
@@ -15,6 +18,16 @@ public class EmailObject {
     }
 
     public EmailObject() {
+    }
+
+    public EmailObject(Parcel in) {
+        sender = in.readString();
+        subject = in.readString();
+        body = in.readString();
+    }
+
+    public String toString() {
+        return "" + sender + ": " + subject;
     }
 
     public String getSender() {
@@ -43,4 +56,29 @@ public class EmailObject {
         this.body = body;
         return this;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(sender);
+        dest.writeString(subject);
+        dest.writeString(body);
+    }
+
+    public static final Parcelable.Creator<EmailObject> CREATOR = new Parcelable.Creator<EmailObject>() {
+
+        @Override
+        public EmailObject createFromParcel(Parcel source) {
+            return new EmailObject(source);
+        }
+
+        @Override
+        public EmailObject[] newArray(int size) {
+            return new EmailObject[size];
+        }
+    };
 }
