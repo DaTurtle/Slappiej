@@ -17,9 +17,7 @@ import module6.slappiej.R;
  */
 public class Inbox extends Activity {
 
-    private static String[] list = {"First", "Second", "Third"};
-
-    @Override
+        @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_inbox);
@@ -38,7 +36,11 @@ public class Inbox extends Activity {
     }
 
     private String[] getInbox() {
-        return list;
+        String[] emails = new String[3];
+        emails[0] = EmailMain.email1.getSubject();
+        emails[1] = EmailMain.email2.getSubject();
+        emails[2] = EmailMain.email3.getSubject();
+        return emails;
     }
 
 }

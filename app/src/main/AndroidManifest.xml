@@ -20,7 +20,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".email.Email"
+            android:name=".email.EmailMain"
+            android:screenOrientation="landscape"
+
+            >
+
+        </activity>
+        <activity
+            android:name=".email.Inbox"
+            android:screenOrientation="landscape"
+
+            >
+
+        </activity>
+        <activity
+            android:name=".email.ReadMail"
             android:screenOrientation="landscape"
 
             >

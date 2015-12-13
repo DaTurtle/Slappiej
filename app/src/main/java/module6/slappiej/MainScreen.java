@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import module6.slappiej.email.Email;
+import module6.slappiej.email.EmailMain;
 
 public class MainScreen extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class MainScreen extends AppCompatActivity {
     }
 
     public void gotoEmail(View view) {
-        Intent intent = new Intent(this, Email.class);
+        Intent intent = new Intent(this, EmailMain.class);
         startActivity(intent);
     }
 }
