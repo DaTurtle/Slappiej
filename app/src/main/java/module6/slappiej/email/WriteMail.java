@@ -1,6 +1,8 @@
 package module6.slappiej.email;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,5 +34,24 @@ public class WriteMail extends Activity {
     public void selectContact(View view) {
         Intent intent = new Intent(this, ContactSelector.class);
         startActivityForResult(intent, 0);
+    }
+
+    public void sendMail(View view) {
+        new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle("Bevestigen")
+                .setMessage("Weet u zeker dat u deze mail wilt verzenden?")
+                .setPositiveButton("Ja", new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        setContentView(R.layout.activity_email_main);
+                        finish();
+                    }
+
+                })
+                .setNegativeButton("Nee", null)
+                .show();
     }
 }
