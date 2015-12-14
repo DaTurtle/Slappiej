@@ -25,6 +25,7 @@
             android:backgroundTint="@android:color/holo_red_light"
             android:drawableLeft="@android:drawable/ic_dialog_email"
             android:text="@string/email"
+            android:textSize="30sp"
             android:layout_weight="1"
             android:onClick="gotoEmail"
             />
@@ -36,6 +37,7 @@
             android:backgroundTint="@android:color/holo_green_dark"
             android:drawableLeft="@android:drawable/ic_menu_call"
             android:text="@string/video"
+            android:textSize="30sp"
             android:layout_weight="1"
             android:onClick="gotoVideo"
             />
@@ -57,6 +59,7 @@
             android:backgroundTint="@android:color/holo_orange_light"
             android:drawableLeft="@android:drawable/ic_menu_directions"
             android:text="@string/transport"
+            android:textSize="30sp"
             android:layout_weight="1"
             android:onClick="gotoTransport"
             />
@@ -68,6 +71,7 @@
             android:backgroundTint="@android:color/holo_purple"
             android:drawableLeft="@android:drawable/ic_delete"
             android:text="@string/news"
+            android:textSize="30sp"
             android:layout_weight="1"
             android:onClick="gotoNews"
             />
@@ -89,6 +93,7 @@
             android:backgroundTint="@android:color/holo_blue_light"
             android:drawableLeft="@android:drawable/ic_delete"
             android:text="@string/chat"
+            android:textSize="30sp"
             android:layout_weight="1"
             android:onClick="gotoChat"
             />
@@ -100,6 +105,7 @@
             android:backgroundTint="@android:color/holo_orange_dark"
             android:drawableLeft="@android:drawable/ic_media_play"
             android:text="@string/music"
+            android:textSize="30sp"
             android:layout_weight="1"
             android:onClick="gotoMusic"
             />
