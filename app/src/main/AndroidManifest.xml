@@ -30,6 +30,9 @@
             android:name=".email.WriteMail"
             android:screenOrientation="landscape"></activity>
         <activity
+            android:name=".email.SentMail"
+            android:screenOrientation="landscape"></activity>
+        <activity
             android:name=".contacts.ContactSelector"
             android:screenOrientation="landscape"></activity>
     </application>

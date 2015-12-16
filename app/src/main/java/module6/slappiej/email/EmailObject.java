@@ -8,9 +8,9 @@ import android.os.Parcelable;
  */
 public class EmailObject implements Parcelable{
 
-    public static final EmailObject email1 = new EmailObject("Bert", "Taart", "Komt u morgen ook taart eten?\nLijkt me erg gezellig!\nGroeten,\nBert");
-    public static final EmailObject email2 = new EmailObject("Truus", "Thee", "Komt u morgen ook thee drinken?\nLijkt me erg gezellig!\nGroeten,\nTruus");
-    public static final EmailObject email3 = new EmailObject("Joop", "Bingo", "Komt u morgen ook bingo spelen?\nLijkt me erg gezellig!\nGroeten,\nJoop");
+    public static final EmailObject EMAIL_1 = new EmailObject("Bert", "Taart", "Komt u morgen ook taart eten?\nLijkt me erg gezellig!\nGroeten,\nBert");
+    public static final EmailObject EMAIL_2 = new EmailObject("Truus", "Thee", "Komt u morgen ook thee drinken?\nLijkt me erg gezellig!\nGroeten,\nTruus");
+    public static final EmailObject EMAIL_3 = new EmailObject("Joop", "Bingo", "Komt u morgen ook bingo spelen?\nLijkt me erg gezellig!\nGroeten,\nJoop");
 
     private String sender;
     private String subject;
@@ -20,9 +20,6 @@ public class EmailObject implements Parcelable{
         this.sender = sender;
         this.subject = subject;
         this.body = body;
-    }
-
-    public EmailObject() {
     }
 
     public EmailObject(Parcel in) {

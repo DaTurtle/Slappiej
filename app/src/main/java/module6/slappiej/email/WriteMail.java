@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 
 import module6.slappiej.R;
@@ -45,7 +46,12 @@ public class WriteMail extends Activity {
                 {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        EditText address = (EditText) findViewById(R.id.addressText);
+                        EditText subject = (EditText) findViewById(R.id.subjectText);
+                        EditText mailBody = (EditText) findViewById(R.id.mailBodyText);
 
+                        SentMail.newMail(new EmailObject(address.getText().toString(),
+                                subject.getText().toString(), mailBody.getText().toString()));
                         setContentView(R.layout.activity_email_main);
                         finish();
                     }

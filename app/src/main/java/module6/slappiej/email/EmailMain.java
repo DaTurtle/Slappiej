@@ -26,7 +26,7 @@ public class EmailMain extends Activity {
     }
 
     public void gotoSent(View view) {
-        Intent intent = new Intent(this, WriteMail.class);
+        Intent intent = new Intent(this, SentMail.class);
         startActivity(intent);
     }
 

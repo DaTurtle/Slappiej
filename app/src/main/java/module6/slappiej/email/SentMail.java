@@ -14,20 +14,18 @@ import java.util.List;
 import module6.slappiej.R;
 
 /**
- * Created by Jan-Willem on 12-12-2015.
+ * Created by Dennis on 15-12-2015.
  */
-public class Inbox extends Activity {
-
-    private List<EmailObject> emails = new ArrayList<>();
+public class SentMail extends Activity {
+    private static List<EmailObject> emails = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_email_inbox);
-        exampleEmails();
+        setContentView(R.layout.activity_email_sentmail);
         List<EmailObject> items = getInbox();
-        final ArrayAdapter<EmailObject> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1 , items);
-        final ListView inboxList = (ListView) findViewById(R.id.inboxList);
+        final ArrayAdapter<EmailObject> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+        final ListView inboxList = (ListView) findViewById(R.id.sentMailList);
         inboxList.setClickable(true);
         inboxList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -43,16 +41,13 @@ public class Inbox extends Activity {
         return emails;
     }
 
-    private void exampleEmails() {
-        emails.add(EmailObject.EMAIL_1);
-        emails.add(EmailObject.EMAIL_2);
-        emails.add(EmailObject.EMAIL_3);
-    }
-
     private void readMail(EmailObject email) {
         Intent intent = new Intent(this, ReadMail.class);
         intent.putExtra("email", email);
         startActivity(intent);
     }
 
+    public static void newMail(EmailObject email) {
+        emails.add(email);
+    }
 }
