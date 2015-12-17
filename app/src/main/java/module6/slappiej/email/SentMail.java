@@ -47,6 +47,10 @@ public class SentMail extends Activity {
         startActivity(intent);
     }
 
+    public void finish(View view) {
+        this.finish();
+    }
+
     public static void newMail(EmailObject email) {
         emails.add(email);
     }

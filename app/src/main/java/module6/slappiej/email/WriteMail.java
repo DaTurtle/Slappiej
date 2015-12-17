@@ -60,4 +60,8 @@ public class WriteMail extends Activity {
                 .setNegativeButton("Nee", null)
                 .show();
     }
+
+    public void finish(View view) {
+        this.finish();
+    }
 }

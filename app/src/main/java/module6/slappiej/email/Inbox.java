@@ -55,4 +55,8 @@ public class Inbox extends Activity {
         startActivity(intent);
     }
 
+    public void finish(View view) {
+        this.finish();
+    }
+
 }

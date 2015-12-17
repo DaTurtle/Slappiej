@@ -34,4 +34,8 @@ public class EmailMain extends Activity {
         Intent intent = new Intent(this, WriteMail.class);
         startActivity(intent);
     }
+
+    public void finish(View view) {
+        this.finish();
+    }
 }

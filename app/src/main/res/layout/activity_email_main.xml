@@ -31,15 +31,15 @@ android:orientation="horizontal"
         />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@android:color/holo_green_dark"
+        android:background="@android:color/holo_orange_light"
         android:drawableLeft="@android:drawable/ic_delete"
-        android:text="@string/email.bin"
+        android:text="@string/email.new"
         android:textSize="60sp"
         android:layout_weight="1"
-        android:onClick="gotoBin"
+        android:onClick="gotoWriteMail"
         />
 
 </LinearLayout>
@@ -53,15 +53,15 @@ android:orientation="horizontal"
     >
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@android:color/holo_orange_light"
+        android:background="@android:color/holo_green_dark"
         android:drawableLeft="@android:drawable/ic_delete"
-        android:text="@string/email.new"
+        android:text="Terug"
         android:textSize="60sp"
         android:layout_weight="1"
-        android:onClick="gotoWriteMail"
+        android:onClick="finish"
         />
 
     <Button

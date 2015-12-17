@@ -10,14 +10,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TextView
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="70sp"
-            android:paddingBottom="20dp"
-            android:paddingLeft="40dp"
-            android:id="@+id/TitleText" />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="70sp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="40dp"
+                android:id="@+id/TitleText" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="Terug"
+                android:textSize="40sp"
+                android:onClick="finish"
+                android:textAllCaps="false"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"

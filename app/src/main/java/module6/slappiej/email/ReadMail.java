@@ -3,6 +3,7 @@ package module6.slappiej.email;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import module6.slappiej.R;
@@ -24,5 +25,9 @@ public class ReadMail extends Activity {
         String titleText = "" + email.getSender() + ": " + email.getSubject();
         title.setText(titleText);
         body.setText(email.getBody());
+    }
+
+    public void finish(View view) {
+        this.finish();
     }
 }
