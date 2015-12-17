@@ -26,7 +26,7 @@ public class Inbox extends Activity {
         setContentView(R.layout.activity_email_inbox);
         exampleEmails();
         List<EmailObject> items = getInbox();
-        final ArrayAdapter<EmailObject> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1 , items);
+        final ArrayAdapter<EmailObject> adapter = new ArrayAdapter<>(this, R.layout.inbox_view , items);
         final ListView inboxList = (ListView) findViewById(R.id.inboxList);
         inboxList.setClickable(true);
         inboxList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
