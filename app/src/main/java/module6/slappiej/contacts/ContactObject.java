@@ -9,8 +9,8 @@ import android.os.Parcelable;
 public class ContactObject implements Parcelable {
 
     public static final ContactObject first = new ContactObject("bert", "van dalen", "bertvandalen@hetnet.nl");
-    public static final ContactObject second = new ContactObject("kees", "asdf", "asdf@kees.nl");
-    public static final ContactObject third = new ContactObject("truus", "achterwerk", "truusa@gmail.com");
+    public static final ContactObject second = new ContactObject("kees", "Reimink", "reimink@kees.nl");
+    public static final ContactObject third = new ContactObject("truus", "Nobbe", "truusn@gmail.com");
 
     private String firstName;
     private String lastName;
