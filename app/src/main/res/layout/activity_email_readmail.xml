@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="40sp"
+            android:textSize="70sp"
             android:paddingBottom="20dp"
             android:paddingLeft="40dp"
             android:id="@+id/TitleText" />
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="30sp"
+            android:textSize="50sp"
             android:paddingLeft="40dp"
             android:id="@+id/BodyText" />
     </LinearLayout>
