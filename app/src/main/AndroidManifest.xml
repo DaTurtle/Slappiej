@@ -35,6 +35,9 @@
         <activity
             android:name=".contacts.ContactSelector"
             android:screenOrientation="landscape"></activity>
+        <activity
+            android:name=".email.SearchMail"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

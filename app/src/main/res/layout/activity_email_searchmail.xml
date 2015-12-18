@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="40sp"
+        android:inputType="text"
+        android:id="@+id/searchInput"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_light"
+            android:padding="3dp"
+            android:text="Zoek Verstuurder"
+            android:textSize="60sp"
+            android:layout_weight="1"
+            android:onClick="searchSender"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:padding="3dp"
+            android:text="Zoek Onderwerp"
+            android:textSize="60sp"
+            android:layout_weight="1"
+            android:onClick="searchSubjects"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_dark"
+            android:padding="3dp"
+            android:text="Zoek in Email"
+            android:textSize="60sp"
+            android:layout_weight="1"
+            android:onClick="searchBodies"
+            android:textAllCaps="false"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

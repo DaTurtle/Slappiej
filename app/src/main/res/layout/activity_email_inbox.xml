@@ -19,6 +19,17 @@
             android:text="@string/email.title"
             android:id="@+id/SenderText" />
 
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Zoeken"
+            android:textSize="40sp"
+            android:onClick="SearchInbox"
+            android:textAllCaps="false"
+            android:layout_height="match_parent" />
+
+
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"

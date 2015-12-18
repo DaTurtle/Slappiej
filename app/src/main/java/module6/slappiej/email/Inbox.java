@@ -18,7 +18,8 @@ import module6.slappiej.R;
  */
 public class Inbox extends Activity {
 
-    private List<EmailObject> emails = new ArrayList<>();
+    private ArrayList<EmailObject> emails = new ArrayList<>();
+    private ArrayAdapter<EmailObject> adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +27,7 @@ public class Inbox extends Activity {
         setContentView(R.layout.activity_email_inbox);
         exampleEmails();
         List<EmailObject> items = getInbox();
-        final ArrayAdapter<EmailObject> adapter = new ArrayAdapter<>(this, R.layout.inbox_view , items);
+        adapter = new ArrayAdapter<>(this, R.layout.inbox_view , items);
         final ListView inboxList = (ListView) findViewById(R.id.inboxList);
         inboxList.setClickable(true);
         inboxList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -39,7 +40,7 @@ public class Inbox extends Activity {
         inboxList.setAdapter(adapter);
     }
 
-    private List<EmailObject> getInbox() {
+    private ArrayList<EmailObject> getInbox() {
         return emails;
     }
 
@@ -53,6 +54,25 @@ public class Inbox extends Activity {
         Intent intent = new Intent(this, ReadMail.class);
         intent.putExtra("email", email);
         startActivity(intent);
+    }
+
+    public void SearchInbox(View view) {
+        Intent intent = new Intent(this, SearchMail.class);
+        intent.putParcelableArrayListExtra("email", getInbox());
+        startActivityForResult(intent, 0);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 0) {
+            if (resultCode == RESULT_OK) {
+                adapter.clear();
+                ArrayList<EmailObject> emails = data.getParcelableArrayListExtra("emails");
+                if (emails != null) {
+                    adapter.addAll(emails);
+                }
+            }
+        }
     }
 
     public void finish(View view) {
