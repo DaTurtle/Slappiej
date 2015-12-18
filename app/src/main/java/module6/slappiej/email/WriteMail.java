@@ -20,6 +20,12 @@ public class WriteMail extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_writemail);
+        Intent i = getIntent();
+        if (i.getBooleanExtra("hasName", false)) {
+            String name = i.getStringExtra("name");
+            EditText address = (EditText) findViewById(R.id.addressText);
+            address.setText(name);
+        }
     }
 
     @Override

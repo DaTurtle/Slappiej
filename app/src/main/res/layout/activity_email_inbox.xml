@@ -12,10 +12,10 @@
         <TextView
             android:layout_gravity="center"
             android:layout_width="0dp"
-            android:layout_weight="5"
+            android:layout_weight="4"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textSize="80sp"
+            android:textSize="60sp"
             android:text="@string/email.title"
             android:id="@+id/SenderText" />
 

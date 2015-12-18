@@ -14,12 +14,14 @@ import module6.slappiej.R;
 
 public class ReadMail extends Activity {
 
+    private EmailObject email;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_readmail);
         Intent i = getIntent();
-        EmailObject email = i.getParcelableExtra("email");
+        email = i.getParcelableExtra("email");
         TextView title = (TextView) findViewById(R.id.TitleText);
         TextView body = (TextView) findViewById(R.id.BodyText);
         String titleText = "" + email.getSender() + ": " + email.getSubject();
@@ -29,5 +31,12 @@ public class ReadMail extends Activity {
 
     public void finish(View view) {
         this.finish();
+    }
+
+    public void reply(View view) {
+        Intent intent = new Intent(this, WriteMail.class);
+        intent.putExtra("hasName", true);
+        intent.putExtra("name", email.getSender());
+        startActivity(intent);
     }
 }
