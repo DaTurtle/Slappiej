@@ -22,7 +22,7 @@ public class ContactSelector extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contacts_selector);
         ContactObject[] items = getContacts();
-        final ArrayAdapter<ContactObject> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1 , items);
+        final ArrayAdapter<ContactObject> adapter = new ArrayAdapter<>(this, R.layout.inbox_view , items);
         final ListView contactList = (ListView) findViewById(R.id.contactList);
         contactList.setClickable(true);
         contactList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
