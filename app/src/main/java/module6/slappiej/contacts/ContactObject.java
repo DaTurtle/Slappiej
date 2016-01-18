@@ -22,10 +22,6 @@ public class ContactObject implements Parcelable {
         emailAddress = in.readString();
     }
 
-    public ContactObject() {
-
-    }
-
     public ContactObject(String firstName, String lastName, String emailAddress) {
         this.firstName = firstName;
         this.lastName = lastName;
