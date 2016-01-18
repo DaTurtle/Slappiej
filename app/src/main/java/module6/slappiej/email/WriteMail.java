@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,9 +18,35 @@ import module6.slappiej.contacts.ContactSelector;
 
 public class WriteMail extends Activity {
 
+    SharedPreferences mPrefs;
+    final String introduced = "userHasSeenHelp";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
+
+        // second argument is the default to use if the preference can't be found
+        Boolean hasSeenHelp = mPrefs.getBoolean(introduced, false);
+        final boolean wantsHelp = false;
+//        if (!hasSeenHelp) {
+//            new AlertDialog.Builder(this)
+//                    .setIcon(android.R.drawable.ic_dialog_alert)
+//                    .setTitle("Hulp")
+//                    .setMessage("Wilt u uitleg?")
+//                    .setPositiveButton("Ja", new DialogInterface.OnClickListener()
+//                    {
+//                        @Override
+//                        public void onClick(DialogInterface dialog, int which) {
+//                            return;
+//                        }
+//
+//                    })
+//                    .setNegativeButton("Nee", null)
+//                    .show();
+//        }
+
+
         setContentView(R.layout.activity_email_writemail);
         Intent i = getIntent();
         if (i.getBooleanExtra("hasName", false)) {
